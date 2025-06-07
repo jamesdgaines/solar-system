@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // Scene
 const scene = new THREE.Scene();
@@ -11,6 +12,11 @@ camera.position.z = 35;
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
+
+// Controls
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.05;
 
 // Lighting
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
@@ -86,6 +92,9 @@ scene.add(starfield);
 function animate() {
     requestAnimationFrame(animate);
     const time = Date.now();
+
+    // Update controls
+    controls.update();
 
     planetMeshes.forEach(planet => {
         const planetData = planet.userData;
