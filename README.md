@@ -1,15 +1,32 @@
-# 3D Solar System with Node.js Backend
+# 3D Solar System
 
-A 3D solar system visualization served by a Node.js and Express backend.
+A simple 3D solar system visualization using Node.js and Three.js.
 
 ## Tech Stack
 
-*   **Frontend**:
-    *   HTML, CSS, JavaScript
-    *   Three.js for 3D graphics
-*   **Backend**:
-    *   Node.js
-    *   Express.js for serving files
+*   **Backend:** Node.js, Express
+*   **Frontend:** HTML, CSS, JavaScript
+*   **3D Rendering:** Three.js
+
+## Getting Started
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/3d-solar-system.git
+    cd 3d-solar-system
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3.  Start the server:
+    ```bash
+    npm start
+    ```
+
+4.  Open your browser and navigate to `http://localhost:8080`.
 
 ## Milestones
 
@@ -37,9 +54,4 @@ A 3D solar system visualization served by a Node.js and Express backend.
     1.  Implement Three.js's `OrbitControls` to allow camera zooming and panning.
     2.  Ensure the scene is responsive and resizes with the browser window.
     3.  (Optional) Add labels for the planets.
-    4.  (Optional) Add an information panel that displays data when a planet is clicked.
-
-## How to Run
-1.  Install dependencies: `npm install`
-2.  Start the server: `npm start`
-3.  Open `http://localhost:3000` in your browser. 
+    4.  (Optional) Add an information panel that displays data when a planet is clicked. 

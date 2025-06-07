@@ -1,13 +1,25 @@
 {
-  "name": "3d-solar-system",
+  "name": "solar-system",
   "version": "1.0.0",
-  "description": "A 3D solar system visualization",
+  "description": "A simple 3D solar system visualization using Node.js and Three.js.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesdgaines/solar-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesdgaines/solar-system/issues"
+  },
+  "homepage": "https://github.com/jamesdgaines/solar-system#readme",
   "dependencies": {
-    "express": "^4.19.2",
-    "three": "^0.164.1"
+    "express": "^5.1.0",
+    "three": "^0.177.0"
   }
-} 
+}
